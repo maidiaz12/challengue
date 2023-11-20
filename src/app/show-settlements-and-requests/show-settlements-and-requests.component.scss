@@ -1,0 +1,55 @@
+.mt-calendar {
+    margin-top: 25px;
+}
+
+.error-message {
+    color: red;
+    font-size: medium;
+}
+
+.table-one {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.table-one th,
+.table-one td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.table-one th {
+    background-color: #f2a154;
+    color: white;
+    text-align: left;
+}
+
+.table-two {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-two th,
+.table-two td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.table-two th {
+    background-color: #f27f7c;
+    color: white;
+    text-align: left;
+}
+
+.text-title{
+    margin-top: 25px;
+    color: rgb(37, 37, 112);
+}
+
+.form-label {
+    font-size: 18px;
+    color: rgb(255, 0, 0);
+    font-weight: semi-bold;
+    margin-bottom: 10px;
+  }

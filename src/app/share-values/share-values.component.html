@@ -1,0 +1,36 @@
+<h2 class="text-title">Para ver valores de cuotapartes del día, seleccione una fecha*</h2>
+<mat-form-field class="mt-inputPicker">
+    <input matInput [matDatepicker]="picker" placeholder="Selecciona una fecha" [formControl]="fechaControl">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+</mat-form-field>
+
+
+<div *ngIf="messageNotResult" class="form-label">
+  {{ messageNotResult }}
+</div>
+
+<div *ngIf="errorMessage" class="form-label">
+  {{ errorMessage }}
+</div>
+
+<div *ngIf="responses && responses.data &&  responses.data.length !== 0">
+  <table class="table table-dark">
+    <thead>
+      <tr>
+        <th>Cuotapartes Circulación</th>
+        <th>Patrimonio Neto</th>
+        <th>Valor Cuotaparte</th>
+        <th>Variación</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of datosMostrar">
+        <td>{{ item.cuotapartesCirculacion }}</td>
+        <td>${{ item.patrimonioNeto }}</td>
+        <td>${{ item.valorCuotaparte }}</td>
+        <td>{{ item.variacion }}</td>
+      </tr>
+    </tbody>
+  </table>  
+</div>
